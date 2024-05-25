@@ -1,4 +1,4 @@
-# Customer-Segmentation-with-K-Means-Clustering-Feature_Engineering
+# Customer Segmentation Using K-Means Clustering and Feature Engineering
 
 ## **Introduction:**
 This project purpose to divide customers into segments based on K-Means Clustering, which represent best marketing strategies according to the customer sales behavior, characteristics, and needs.<br>
