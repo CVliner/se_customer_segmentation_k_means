@@ -1,7 +1,7 @@
 ### Introduction
 
 ### Customer Segmentation in SE using K-Means Clustering and Feature Engineering
-This project purpose to divide customers into segments based on K-Means Clustering, which represent best marketing strategies according to the customer sales behavior, characteristics, and needs.
+This project purpose to divide SE customers into segments based on K-Means Clustering, which represent best marketing strategies according to the customer sales behavior, characteristics and needs.
 
 ### Usage
 
@@ -19,7 +19,7 @@ python se_customer_segmentation_k_means.py
 
 ### Dataset:
 
-The dataset obtained from database of SE retail, contains all the transactions occurring between 01/12/2010 and 09/12/2018 for Central Asia customers. The attributes include invoice number, product code, product name, quantity per transaction, invoice date, product unit price, customer ID and country. The company mainly sells electrical systems, automation and switches. Many customers of the company are distrubitors, system integrators and design companies.
+The dataset obtained from database of SE retail of eight years, contains all the transactions occurring between 01/12/2010 and 09/12/2018 for Central Asia customers. The attributes include invoice number, product code, product name, quantity per transaction, invoice date, product unit price, customer ID and country. The company mainly sells electrical systems, automation and switches. Many customers of the company are distrubitors, system integrators and design companies.
 
 
 ### Results:
