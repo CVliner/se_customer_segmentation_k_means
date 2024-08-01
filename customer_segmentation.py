@@ -1,16 +1,5 @@
 # **Customer Segmentation with K-Means Clustering based on RFM Model**
 
-## **Table of Contents**
- 1. [Introduction](#Introduction) <br>
- 2. [Data Understanding](#Data-Understanding) <br>
- 3. [Data Pre-processing](#Data-Pre-processing) <br>
- 4. [Exploratory Data Analysis](#Exploratory-Data-Analysis) <br>
- 5. [RFM Analysis](#RFM-Analysis) <br>
- 6. [K-Means Clustering on RFM Values](#K-Means-Clustering-on-RFM-Values) <br>
- 7. [Results](#Results) <br>
- 8. [Conclusion](#Conclusion) <br>
- 9. [Recommendations](#Recommendations) <br>
-
 ## **Introduction**
 
 This project purpose to divide customers into segments based on K-Means Clustering, which represent best marketing strategies according to the customer sales behavior, characteristics, and needs.
