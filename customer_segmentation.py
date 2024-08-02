@@ -138,7 +138,7 @@ plt.gca().get_yaxis().set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
 plt.title("Total Sales by Top 10 Countries")
 plt.show()
 
-"""Unsurprisingly, as a UK-based online retail company, the United Kingdom is a leader in terms of total sales.
+"""Unsurprisingly, as a Kazakhstan-based  retail company, the Kazakhstan is a leader in terms of total sales.
 
 #### **What are the top 10 countries with the highest number of customers ?**
 """
@@ -153,7 +153,7 @@ ax.set_xticklabels(ax.get_xticklabels(), rotation=50, ha="right")
 plt.title("Number of Customers by Top 10 Countries")
 plt.show()
 
-"""Similarly, the United Kingdom has the highest number of customers compared to the other countries.
+"""Similarly, the Kazakhstan has the highest number of customers compared to the other countries.
 
 We are ready to continue with RFM Analysis !
 
