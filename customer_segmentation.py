@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-This project purpose to divide customers into segments based on K-Means Clustering, which represent best marketing strategies according to the customer sales behavior, characteristics, and needs.
+This project purpose to divide customers into segments based on K-Means Clustering, which represent best marketing strategies according to the customer sales behavior, characteristics and needs.
 
 ## **Importing Required Libraries**
 """
@@ -121,21 +121,21 @@ print("Percentage of cancelled orders : {:.2f}%".format(cancelled_orders/total_o
 
 """It is a better approach to elaborate on the reason behind the cancellation of orders to provide leveraged services.
 
-#### **What are the top 10 countries with the highest Sales ?**
+#### **What are the top 5 countries with the highest Sales ?**
 """
 
 df_top=df_retail.groupby(by=["Country"])
 df_top=df_top.agg({"Sales":["sum"]})
 df_top.columns = df_top.columns.droplevel(1)
 df_top.sort_values(by=['Sales'],ascending=False,inplace=True)
-df_top=df_top.reset_index().head(10)
+df_top=df_top.reset_index().head(5)
 df_top
 
 fig, ax = plt.subplots(figsize=(8,5))
 ax=sns.barplot(x='Country', y='Sales', data=df_top, estimator=max, ax=ax)
 ax.set_xticklabels(ax.get_xticklabels(), rotation=50, ha="right")
 plt.gca().get_yaxis().set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
-plt.title("Total Sales by Top 10 Countries")
+plt.title("Total Sales by Top 5 Countries")
 plt.show()
 
 """Unsurprisingly, as a Kazakhstan-based  retail company, the Kazakhstan is a leader in terms of total sales.
@@ -144,13 +144,13 @@ plt.show()
 """
 
 df_top=df_retail.groupby(by=["Country"])["CustomerID"].nunique()
-df_top=df_top.sort_values(ascending=False).head(10)
+df_top=df_top.sort_values(ascending=False).head(5)
 df_top
 
 fig, ax = plt.subplots(figsize=(8,5))
 df_top.plot(kind="bar",x="Country")
 ax.set_xticklabels(ax.get_xticklabels(), rotation=50, ha="right")
-plt.title("Number of Customers by Top 10 Countries")
+plt.title("Number of Customers by Top 5 Countries")
 plt.show()
 
 """Similarly, the Kazakhstan has the highest number of customers compared to the other countries.
@@ -345,8 +345,6 @@ for col in cols:
     i=i+1
 
 fig.suptitle("Histograms of Each RFM Value")
-
-"""By using the log transform method, we get an almost normal distribution in Frequency and Monetary. On the other hand, the distribution of Recency turns into a less-skewed one.
 
 #### **Determining Optimum Number of Clusters**
 
