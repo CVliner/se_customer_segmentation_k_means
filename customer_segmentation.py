@@ -1,7 +1,5 @@
 # **Customer Segmentation with K-Means Clustering based on RFM Model**
 
-## **Introduction**
-
 This project purpose to divide customers into segments based on K-Means Clustering, which represent best marketing strategies according to the customer sales behavior, characteristics and needs.
 
 ## **Importing Required Libraries**
@@ -60,8 +58,6 @@ df['CustomerID'].isnull().sum()
 
 df.shape
 
-"""Great! We're done with the missing values.
-
 #### **Adding New Attribute "Sales" to the Dataset**
 """
 
@@ -110,10 +106,10 @@ df_retail[df_retail["StockCode"]==23231]["Description"].unique()
 
 """As a result, the discrepancy in the "Description" column won't affect our RFM analysis and can be left as it is.
 
-#### **How many orders were cancelled ?**
+#### **How many orders were cancelled?**
 """
 
-#finding the percentage of cancelled orders
+#Finding the percentage of cancelled orders
 cancelled_orders=df[df["Sales"]<0]["InvoiceNo"].nunique()
 total_orders=df["InvoiceNo"].nunique()
 print("Number of cancelled orders :", cancelled_orders)
@@ -121,7 +117,7 @@ print("Percentage of cancelled orders : {:.2f}%".format(cancelled_orders/total_o
 
 """It is a better approach to elaborate on the reason behind the cancellation of orders to provide leveraged services.
 
-#### **What are the top 5 countries with the highest Sales ?**
+#### **What are the top 5 countries with the highest Sales?**
 """
 
 df_top=df_retail.groupby(by=["Country"])
@@ -140,7 +136,7 @@ plt.show()
 
 """Unsurprisingly, as a Kazakhstan-based  retail company, the Kazakhstan is a leader in terms of total sales.
 
-#### **What are the top 10 countries with the highest number of customers ?**
+#### **What are the top 5 countries with the highest number of customers ?**
 """
 
 df_top=df_retail.groupby(by=["Country"])["CustomerID"].nunique()
